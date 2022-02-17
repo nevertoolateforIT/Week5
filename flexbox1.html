@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,.footer{
+            flex:0 0 content;
+            background-color: rgb(155, 151, 151);
+        }
+        .header{
+            height:30px;
+        }
+        .main{
+            flex:1;
+            display:flex;
+            flex-direction:row;
+    
+           
+        }
+        body{
+            display:flex;
+            flex-flow:column;
+            min-height:50vh;
+        }
+        .section{
+            flex:1;
+            background-color: blanchedalmond;
+        }
+            
+        .aside{
+            width:30vw;
+            background-color: rgb(181, 209, 181)
+        }
+        .flexcontainer{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            height:400px;
+            align-content: flex-end;
+            justify-content: space-around;
+            
+        }
+        .flexp1,
+        .flexp2{
+            width:300px;
+            height: 70px;
+            background-color: rgb(240, 210, 136);
+           
+        }
+    .flexp3{
+        width:620px;
+        height:70px;
+        background-color: rgb(240, 210, 136);
+      
+    }
+    .footer{
+        flex:1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .pf1,.pf2,.pf3,.pf4{
+        width:210px;
+        height:70px;
+        background-color: white;
+    }
+    
+    </style>
+</head>
+
+
+<body>
+    <header class="header"> Шапка страницы</header>
+    <main class="main">
+        <section class="section"> Основная Часть
+            <div class="flexcontainer"> 
+            <p class="flexp1"> Ещё 1</p>
+            <p class="flexp2"> Ещё 2</p>
+            <p class="flexp3"> Ещё 3</p>
+            </div>
+        </section>
+        <aside class="aside"> Боковая Область</aside>
+    </main>
+    <footer class="footer">
+        <p class="pf1">Секция футера 1</p>
+        <p class="pf2">Секция футера 2</p>
+        <p class="pf3">Секция футера 3</p>
+        <p class="pf4">Секция футера 4</p>
+    </footer>
+</body>
+</html>
